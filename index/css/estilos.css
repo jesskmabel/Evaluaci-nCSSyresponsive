@@ -1,0 +1,248 @@
+header {
+	width: 100%;
+	color: white;
+	background-color: #5b7989;
+	border-radius: 10px 10px 0 0;
+	display: flex;
+	flex-flow: row wrap;
+}
+header h1{
+	text-shadow: 2px 2px 2px #02010a;
+	display:inline-block;
+	width: 50%;
+	padding-left: 5%;
+	
+}
+body{
+	background-color: #02010a;
+	width: 80%;
+	margin-left: 10%;
+	font-family:"Dancing Script";
+	display: flex;
+}
+#texto {
+	width: 80%;
+	padding-left: 20px; padding-right: 25px;
+	text-align: justify;
+	color: navy; 
+	font-family:  Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+.contenido{
+	max-width: 900px;
+	margin: auto;
+}
+nav{
+	display:inline-block;
+	float:right;
+	padding-left: 1%;
+}
+nav ul li{
+    list-style:none;
+	float: left;
+	padding-left: 5px;
+}
+nav a {
+	color: white;
+	margin-top: 1%;
+	font-size: 20px;
+}
+nav a:hover{
+	font-size: 24px;
+}
+
+.central {
+	text-align: center;
+	background-color: #82c3a6;
+	display: flex;
+}
+.central img {
+	display:block;
+	margin:auto;
+	width:80%;
+}
+
+.secundaria {
+	text-align: center;
+	background-color: #d5c75f;
+	border: 1px;
+	display:flex;
+}
+.secundaria img {
+	
+	width:100%;
+	box-shadow: 2px 2px 2px #82c3a6;
+}
+.paisajes{
+	margin-left:15%;
+	border-radius: 2px;
+	width: 25%;
+}
+.paisajes:hover img{
+		transform:rotate(10deg);
+}
+.retratos{
+	border-radius: 2px;
+	margin-left:15%;
+	width: 25%;
+}
+.retratos:hover img{
+	transform:translate(20px, -5px);
+	box-shadow: 2px 2px 2px #82c3a6;
+}
+img{
+	border: 2px solid white;
+}
+.footer{
+	text-align: center;
+	padding-top: 2%;
+	width: 100%;
+	background-color: #C6d5c5;
+	border-radius: 0 0 10px 10px;
+	flex-flow: row wrap;
+	display: flex;
+}
+.contact, .terms, .social, .copyright{
+	width: 20%;
+}
+.paisajefotos{
+background-color: #d5c75f;
+border: 1px;
+text-align: center;
+flex-flow: row wrap;
+}
+
+.lista1 {
+display: flex;
+order:1;
+	width:100%;
+	
+}
+.lista2 {
+display: flex;
+order:2;
+	width:100%;
+}
+.imagen01 {
+  width:100%;
+	  filter: blur(10px);
+}
+.imagen02 {
+  width:100%;
+	filter: grayscale(100%);
+}
+.imagen03 {
+  width:100%;
+	filter:sepia(90%);
+}
+.imagen04 {
+  width:100%;
+filter: grayscale(100%);
+}
+.imagen05 {
+ width: 100%;
+}
+.imagen06 {
+  width: 100%;
+filter: grayscale(100%);
+}
+
+@keyframes
+  animacion {
+  0% {margin-top: 150%}
+
+  60% {margin-top: -5%}
+
+  100% {margin-top: 0%}
+
+  }
+
+  header {
+	  animation: animacion;
+	  animation-duration: 1s
+}
+
+@media all and (max-width: 900px){
+    .header{
+        flex-direction: column;
+    }
+    .nav {
+		flex-direction:row-reverse;
+        display:flex;
+        order:1;
+        width:100%;
+    }
+	.header h1{
+	    width:100%;
+	    display:flex;
+	    padding-left: 5%;
+	}
+	.nav ul li{
+	    width: 50%;
+	    float: center;
+		
+	}
+	
+	.contenido{
+		max-width: 150%;
+		margin: auto;
+	}
+	.central{
+		width: 100%;
+	}
+	.secundaria{
+		display:flex;
+		flex-direction: column;
+		width: 100%;
+		align-content: center;
+	}
+	.paisajes{
+		width: 70%;
+	}
+	.retratos{
+		width: 70%;
+	}
+
+	.footer{
+		text-align: center;
+		padding-top: 2%;
+		width: 100%;
+		background-color: #C6d5c5;
+		border-radius: 0 0 10px 10px;
+		flex-flow: row wrap;
+	}
+	.contact{
+		width: 100%;
+		order: 1;
+	}
+	.social{
+		width: 100%;
+		order: 2;
+	}
+	.terms{
+		width: 100%;
+		order: 3;
+	}
+	.copyright{
+		width: 100%;
+		order: 4;
+	}
+
+.paisajefotos{
+background-color: #d5c75f;
+border: 1px;
+text-align:center;
+display:flex;
+}
+.lista1 {
+width:100%;
+display:table-column;
+}
+.lista2 {
+width:100%;
+display:table-column;
+}
+  
+}
+
+
+
